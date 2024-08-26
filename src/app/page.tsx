@@ -1,3 +1,5 @@
+'use client'
+
 import { useSaveTodos } from "@/hooks/useSaveTodos";
 
 export default function Home() {
@@ -6,7 +8,7 @@ export default function Home() {
   
   return (
     <div>
-
+      <h1>todo</h1>
     </div>
   );
 }
