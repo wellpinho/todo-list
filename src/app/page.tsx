@@ -1,5 +1,6 @@
 'use client'
 
+import { CustomHeader } from "@/components/header";
 import { useSaveTodos } from "@/hooks/useSaveTodos";
 
 export default function Home() {
@@ -7,8 +8,8 @@ export default function Home() {
   useSaveTodos();
   
   return (
-    <div>
-      <h1>todo</h1>
+    <div className="container mx-auto">
+      <CustomHeader />
     </div>
   );
 }

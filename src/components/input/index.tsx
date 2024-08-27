@@ -8,24 +8,25 @@ type Props = {
 }
 export const CustomInput = ({value, placeholder, type, onChange}: Props) => {
     return (
-        <div className="w-full">
-            <input 
-                className="
-                    bg-gray-500 
-                    outline 
-                    border-transparent 
-                    rounded 
-                    text-gray-100 
-                    transition-all 
-                    py-3
-                    placeholder-gray-300
-                    focus:bg-purple-900
-                "
-                type={type} 
-                onChange={onChange}
-                value={value}
-                placeholder={placeholder}
-            />
-        </div>
+        <input 
+            className="
+                bg-[#5F6F65] 
+                outline 
+                border-transparent 
+                rounded-l-md
+                rounded-r-none
+                text-[#C9DABF]
+                transition-all 
+                py-3
+                placeholder-[#C9DABF]
+                focus:bg-[#808D7C]
+                pl-3
+                pr-3
+            "
+            type={type} 
+            onChange={onChange}
+            value={value}
+            placeholder={placeholder}
+        />
     )
 }

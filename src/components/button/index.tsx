@@ -5,29 +5,28 @@ type Props = {
 }
 export const CustomButton = ({ onClick }: Props) => {
     return (
-        <div>
-            <button className="
-                flex
-                items-center
-                cursor-pointer
-                gap-2
-                pt-3
-                pr-4
-                pb-3
-                pl-4
-                rounded
-                outline
-                border-transparent
-                bg-blue-500
-                text-gray-200
-                font-bold
-                text-sm
-                transition-all
-                hover:bg-purple-400
-            " onClick={onClick}>
-                Criar
-                <PlusCircle size={32} />
-            </button>
-        </div>
+        <button className="
+            flex
+            items-center
+            cursor-pointer
+            gap-1
+            pt-3
+            pr-4
+            pb-3
+            pl-4
+            rounded-l-none
+            rounded-r-md
+            outline
+            border-transparent
+            bg-[#5F6F65]
+            text-[#C9DABF]
+            text-sm
+            transition-all
+            hover:bg-[#808D7C]" 
+            onClick={onClick}
+        >
+            Criar
+            <PlusCircle size={20} />
+        </button>
     )
 }
